@@ -21,7 +21,7 @@ import java.util.Objects;
 
 @ReactModule(name = FolderSelectorModule.NAME)
 public class FolderSelectorModule extends ReactContextBaseJavaModule {
-  public static final String NAME = "FolderSelector";
+  public static final String NAME = "FolderSelectorAndroid";
   private Promise mPromise;
   private final ActivityEventListener mActivityEventListener = new BaseActivityEventListener() {
     @Override

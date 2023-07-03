@@ -14,7 +14,9 @@ def isNewArchitectureEnabled() {
 }
 
 apply plugin: "com.android.library"
-
+ext {
+  reactNativeVersion = '0.71.0-rc.0'
+}
 
 def appProject = rootProject.allprojects.find { it.plugins.hasPlugin('com.android.application') }
 
@@ -65,7 +67,8 @@ dependencies {
   // For < 0.71, this will be from the local maven repo
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
-  implementation "com.facebook.react:react-native:+"
+  implementation "com.facebook.react:react-native:$reactNativeVersion"
+  implementation 'androidx.navigation:navigation-ui:2.6.0'
 }
 
 if (isNewArchitectureEnabled()) {

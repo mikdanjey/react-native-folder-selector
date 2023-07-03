@@ -7,7 +7,7 @@ export default function App() {
   const [result, setResult] = React.useState();
 
   React.useEffect(() => {
-    showFolderSelector(3, 7).then(setResult);
+    showFolderSelector().then(setResult);
   }, []);
 
   return (

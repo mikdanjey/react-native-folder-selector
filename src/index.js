@@ -1,7 +1,7 @@
 import { NativeModules, Platform } from 'react-native';
 
-const FolderSelector = NativeModules.FolderSelector;
+const FolderSelectorAndroid = NativeModules.FolderSelectorAndroid;
 
-export function showFolderSelector(a: number, b: number): Promise<number> {
-  return FolderSelector.showFolderSelector(a, b);
+export function showFolderSelector() {
+  return FolderSelectorAndroid.showFolderSelector();
 }
