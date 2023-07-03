@@ -15,7 +15,7 @@ import { showFolderSelector } from 'react-native-folder-selector';
 
 // ...
 
-const result = await showFolderSelector(3, 7);
+const folderPath = await showFolderSelector();
 ```
 
 ## Contributing
