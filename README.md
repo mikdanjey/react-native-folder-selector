@@ -11,11 +11,11 @@ npm install react-native-folder-selector
 ## Usage
 
 ```js
-import { multiply } from 'react-native-folder-selector';
+import { showFolderSelector } from 'react-native-folder-selector';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await showFolderSelector(3, 7);
 ```
 
 ## Contributing
